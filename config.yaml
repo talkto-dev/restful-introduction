@@ -1,0 +1,27 @@
+# Config virtual machine info
+machine_name : 'RESTFul Introduction'
+local_domain : 'restful.local'
+private_ip   : '192.168.55.55'
+machine_ram  : 'auto'
+machine_cpu  : 'auto'
+
+mysql_root_pass : 'root'
+mysql_user      : 'restful'
+mysql_user_pass : 'restful'
+mysql_user_db   : 'restful'
+
+# Config Synced folders
+syncDir :
+  - host: ./
+    guest: /var/www
+    owner: vagrant
+    group: www-data
+    dmode: 775
+    fmode: 775
+
+  - host: ./public
+    guest: /var/www/html
+    owner: vagrant
+    group: www-data
+    dmode: 775
+    fmode: 775

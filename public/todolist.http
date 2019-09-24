@@ -1,0 +1,63 @@
+### Create a todo list
+
+POST http://192.168.55.55/todolist/
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+{"name":"1st Todo List"}
+
+### Create another todo list
+
+POST http://192.168.55.55/todolist/
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+{"name":"2nd Todo List"}
+
+### Get a todo list by code
+
+GET http://192.168.55.55/todolist/9v4esad9od
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+### Update todo list name
+
+PUT http://192.168.55.55/todolist/9v4esad9od
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+{"name":"1st Todo List Edited"}
+
+### Get all todolists
+
+GET http://192.168.55.55/todolist/
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+### Get all todo lists page 2
+
+GET http://192.168.55.55/todolist/?page=2
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+### Get all with name like
+
+GET http://192.168.55.55/todolist/?name=todo
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+### Delete a todo list
+
+DELETE http://192.168.55.55/todolist/j82t5jsbj8
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+###

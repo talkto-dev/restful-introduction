@@ -1,0 +1,81 @@
+### Create a todo list item for list
+
+POST http://192.168.55.55/todolist/9v4esad9od/item
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+{"name":"Do this", "status": 0}
+
+### Create a todo list item for list
+
+POST http://192.168.55.55/todolist/9v4esad9od/item
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+{"name":"Do that", "status": 0}
+
+### Create a todo list item for list
+
+POST http://192.168.55.55/todolist/9v4esad9od/item
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+{"name":"Do other", "status": 0}
+
+### Get a todo list item by code
+
+GET http://192.168.55.55/todolist/9v4esad9od/item/owhkc1ld5u
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+### Update todo list item name
+
+PUT http://192.168.55.55/todolist/9v4esad9od/item/owhkc1ld5u
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+{"name":"Do something", "status": 1}
+
+### Get all todo list items
+
+GET http://192.168.55.55/todolist/9v4esad9od/item/
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+### Get all todo list items page 2
+
+GET http://192.168.55.55/todolist/9v4esad9od/item/?page=2
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+### Get all todo list items with name like
+
+GET http://192.168.55.55/todolist/9v4esad9od/item/?name=do
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+### Delete todo list item
+
+DELETE http://192.168.55.55/todolist/9v4esad9od/item/o342ciicjs
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+### Change status of todo list item
+
+PUT http://192.168.55.55/todolist/9v4esad9od/item/owhkc1ld5u/status
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+{"status":2}
+
+###
